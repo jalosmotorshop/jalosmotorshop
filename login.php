@@ -23,9 +23,9 @@ $result = mysqli_query($conn, $sql);
 
         if ($row ['uEmail'] === $email && $row ['uPass'] === $pass ){
             if ($row ['uLevel'] == 1){
-                header("Location: customer/index.html?user=".$id);
+                header("Location: customer/login.html?user=".$id);
             }else if ($row ['uLevel'] == 3){
-                header("Location: admin/index.html?user=".$id);
+                header("Location: admin/login.html?user=".$id);
             }
         }
 
